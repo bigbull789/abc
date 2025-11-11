@@ -1,5 +1,5 @@
 class Item:
-    def __init__(self, value, weight):   # ✅ Correct constructor
+    def __init__(self, value, weight):   #
         self.value = value
         self.weight = weight
         self.ratio = value / weight  # value-to-weight ratio
@@ -29,10 +29,11 @@ def fractional_knapsack(capacity, values, weights):
 
 
 # Driver code
-if __name__ == "__main__":   # ✅ Correct main check
+if __name__ == "__main__":   # 
     values = [60, 100, 120]   # Profits
     weights = [10, 20, 30]    # Weights
     capacity = 50             # Knapsack 
     
     max_value = fractional_knapsack(capacity, values, weights)
-    print("Maximum value in Knapsack =", max_value)  # ✅ Fixed print
+    print("Maximum value in Knapsack =", max_value)  
+
