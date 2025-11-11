@@ -27,7 +27,7 @@ contract StudentData {
         return students.length;
     }
 
-    // ✅ Function to get student details by Roll Number
+    //  Function to get student details by Roll Number
     function getStudentByRoll(uint256 _rollNo) public view returns (string memory, uint256) {
         for (uint256 i = 0; i < students.length; i++) {
             if (students[i].rollNo == _rollNo) {
@@ -47,3 +47,4 @@ contract StudentData {
         emit Received(msg.sender, msg.value);
     }
 }
+
